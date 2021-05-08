@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Final Project - Trains</title>
+        <link rel = "icon" href = 
+        "https://mpng.subpng.com/20180218/hze/kisspng-train-rail-transport-passenger-car-railroad-car-cl-train-graphics-cliparts-5a8a43546c8679.9130947915190106444445.jpg" 
+        type = "image/jpg">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="root">
+            <!-- <button id="start">Play</button> -->
+            <nav class="navBar">
+                <div>
+                  
+                <!-- <button class="trains">Trains</button>
+                <button class="navButton" id="login">Login/Sign Up</button>
+                <button class="navButton" id="newIdea">Another Activity to Try</button> -->
+                <!-- <button class="navButton" id="youtube">Trains on Youtube</button> -->
+                <!-- <button class="navButton" id="cnjokes">jokes</button>
+                <button class="navButton" id="hello">Hi from where you are</button>
+                <button class="navButton" id="country">country</button> -->
+                <!-- <a id="newIdea" href="/newIdea">newIdea</a> -->
+                </div>
+            </nav>
+        </div>
+
+        <div class="nav">
+          <header>
+              <nav>
+                <a class="navButton" href="trains.html">Play Trains</a>
+                <a class="navButton" href="other.html">Other Entertainment</a>
+                <a class="navButton" id="logout">Logout</a>
+              </nav>
+              <h1 class="heading">
+                  Other Entertainment
+              </h1>
+          </header>
+        </div>
+
+        <div class="try">Click and Enjoy!</div>
+
+        <div>
+                <button class="oButton" id="newIdea">Another Activity To Try</button>
+                <button class="oButton" id="cnjokes">Chuck Norris Joke</button>
+                <button class="oButton" id="country">I Already Knew</button>
+                <button class="oButton" id="hello">I Knew This Too</button>
+                <button class="oButton" id="ron">Ron Swanson Quote</button>
+                <!-- <button class="oButton" id="wea">CH Weather</button> -->
+                <button class="oButton" id="refresh" onclick="location.reload()">Refresh For New</button>
+        </div>
+        <div id="addidea"></div>
+        <div id="addjoke"></div>
+        <div id="addcountry"></div>
+        <div id="addhey"></div>
+        <div id="addquote"></div>
+        <!-- <div id="addwea"></div> -->
+        <div id="addvid">
+            <div class="best">Now for the best part of my website...</div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/a2K2botmjOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        
+
+
+
+        <script src="http://www.boredapi.com/api/activity/"></script>
+        <script src="http://api.icndb.com/jokes/random"></script>
+        <script src="https://api.country.is/"></script>
+        <script src="'https://fourtonfish.com/hellosalut/?mode=auto'"></script>
+        <script src="https://ron-swanson-quotes.herokuapp.com/v2/quotes"></script>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+        <script>
+            var firebaseConfig = {
+              apiKey: "AIzaSyDY4shrW0TCiaj_Gbz6y5_61-b9i5TVxQU",
+              authDomain: "final-9ea49.firebaseapp.com",
+              databaseURL: "https://final-9ea49-default-rtdb.firebaseio.com",
+              projectId: "final-9ea49",
+              storageBucket: "final-9ea49.appspot.com",
+              messagingSenderId: "300265111217",
+              appId: "1:300265111217:web:5c2f8b34300d0596aaac90",
+              measurementId: "G-EG89VXMNHH"
+            };
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+          </script>
+
+        <script src="node_modules/axios/dist/axios.js"></script>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="api.js" type="module"></script>
+        <script src="firbase-login.js" type="module"></script>
+    </body>
+</html>
