@@ -8,7 +8,7 @@ document.getElementById("newIdea").addEventListener("click", function() {
 export async function bored() {
     const result = await axios({
       method: 'get',
-      url: 'http://www.boredapi.com/api/activity/'
+      url: '//www.boredapi.com/api/activity/'
     });
     return result.data.activity;
   };
@@ -34,7 +34,7 @@ document.getElementById("cnjokes").addEventListener("click", function() {
 export async function jokes() {
     const result = await axios({
       method: 'get',
-      url: 'http://api.icndb.com/jokes/random'
+      url: '//api.icndb.com/jokes/random'
     });
     return result.data.value.joke;
   };
